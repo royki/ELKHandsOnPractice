@@ -1,28 +1,28 @@
 ##### _Install Elastic in Debian_
--`curl -L -O https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.2.1.deb`
--`sudo dpkg -i elasticsearch-6.2.1.deb`
+- `curl -L -O https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.2.1.deb`
+- `sudo dpkg -i elasticsearch-6.2.1.deb`
 
 ##### _Check Status of Elasticsearch_
--`sudo service elasticsearch status`
+- `sudo service elasticsearch status`
 
 ##### _Configure Elasticsearch to start during system startup_
--`systemctl enable elasticsearch`
+- `systemctl enable elasticsearch`
 
 ##### _Run Elasticsearch_
--`sudo /etc/init.d/elasticsearch start` or
--`sudo systemctl start elasticsearch`
+- `sudo /etc/init.d/elasticsearch start` or
+- `sudo systemctl start elasticsearch`
 
 ##### _Check Elastic is Up and Running_
--`curl -X GET http://localhost:9200`
+- `curl -X GET http://localhost:9200`
 
 ##### _Troubleshoot_
--`Connection refused error on Elastic Search` / `Elasticsearch memory problems`
+- `Connection refused error on Elastic Search` / `Elasticsearch memory problems`
 
 ```sh
 There is insufficient memory for the Java Runtime Environment to continue.
 ```
 
-- Set network.host to localhost from `.yml`
+- Set `network.host` to localhost from `.yml`
 ```sh
 /etc/elasticsearch/elasticsearch.yml
 network.host: 0.0.0.0
@@ -45,6 +45,11 @@ OR
 ################################################################
 
 ```
+
+##### _Check Status of Services and Enable or Disable from Start up_
+- `service --status-all`
+- `systemctl enable <service>`
+- `systemctl disable <service>`
 
 ##### _Useful links_
 |Site|Link|
