@@ -1,5 +1,5 @@
 
-#####_ELK Stack_
+##### _ELK Stack_
 
 - `Elasticsearch` – It stores incoming logs from Logstash and provides an ability to search the logs/data in a real time
 - `Logstash` – Logstash is a data processing pipeline for managing events and logs; processes (Collect, enrich and send it to Elasticsearch)
