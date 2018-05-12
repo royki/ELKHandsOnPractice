@@ -11,4 +11,8 @@
     - `Metricbeat` – Ship metrics to Elasticsearch.
 
 
+##### _Check Status of Services and Enable or Disable from Start up_
 
+- `service --status-all`
+- `systemctl enable <service>`
+- `systemctl disable <service>`
