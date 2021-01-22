@@ -8,6 +8,9 @@
 
 - `docker run -d  -p 5601:5601 -h kibana --name kibana --link elasticsearch:elasticsearch kibana`
 - Check`curl http://localhost:9200/_cat/indices`
+- `GET /_cluster/health`
+- `GET /_cat/nodes?v`
+- `GET /_cat/indices?v
 
 ##### _Run Logstash container with logstash config file and use it to setup Logstash_
 
